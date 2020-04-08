@@ -1,0 +1,93 @@
+@media only screen and (max-width: 1280px) {
+  @font-face {
+    font-family: Gramatika Light;
+    src: url(../fonts/15088.ttf);
+  }
+  @font-face {
+    font-family: Gill Sans Nova Cn Heavy;
+    src: url(../fonts/16071.ttf);
+  }
+
+  *{
+    user-select: none;
+    margin: 0;
+    font-family: 'Gill Sans Nova Cn Heavy';
+  }
+
+  
+
+
+
+  .container_contacts{
+    background-color: white;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+  }
+  .contacts{
+    margin: 0px 80px 0px 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .contacts>div{
+    width: 20%;
+    border: solid 1px green;
+    padding: 25px;
+  }
+
+  .width{
+    margin: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  .contacts h3{
+    font-size: 30px;
+  }
+  .contacts .address,
+  .contacts .phone,
+  .contacts .mail,
+  .contacts .schedule{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+
+  .google_map{
+    margin-bottom: -5px;
+    padding: 0;
+  }
+
+
+
+  .social{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+  }
+  .social h2{
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    margin: 40px 0 50px 0;
+  }
+  .social_list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px 0 80px;
+  }
+  .social_list h3{
+    width: 100%;
+  }
+  .social_list>div{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    border: solid 1px green;
+    padding: 20px 16px 20px 16px;
+  }
+}

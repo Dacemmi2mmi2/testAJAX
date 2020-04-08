@@ -1,0 +1,291 @@
+@media only screen and (min-width: 1921px) {
+  @font-face {
+    font-family: Gramatika Light;
+    src: url(../fonts/15088.ttf);
+  }
+  @font-face {
+    font-family: Gill Sans Nova Cn Heavy;
+    src: url(../fonts/16071.ttf);
+  }
+
+  *{
+    margin: 0;
+    font-family: 'Gill Sans Nova Cn Heavy';
+  }
+  body{
+    background-color: black;
+  }
+  .container{
+    width: 1920px;
+    margin: 0 auto;
+  }
+
+
+
+  .content_services{
+    background-color: white;
+    padding: 0 50px 50px 50px;
+  }
+  .site,
+  .app,
+  .progects,
+  .technologies,
+  .discuss{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0 40px 0;
+    margin-bottom: 40px;
+  }
+  .number{
+    margin-right: 30px;
+    font-family: 'Gill Sans Nova Cn Heavy';
+    font-size: 90px;
+    font-weight: 900;
+  }
+  .site h2,
+  .app h2,
+  .progects h2,
+  .technologies h2,
+  .discuss h2{
+    font-size: 40px;
+  }
+  .site span,
+  .app span,
+  .progects span,
+  .technologies span,
+  .discuss span{
+    font-size: 30px;
+    font-weight: normal;
+  }
+  .site .text,
+  .app .text,
+  .progects .text,
+  .technologies .text,
+  .discuss .text{
+    width: 100%;
+    line-height: 1.3;
+    font-size: 20px;
+    text-align: justify;
+  }
+
+
+
+  .site_list,
+  .app_list,
+  .progects_list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .lending,
+  .shop,
+  .commerce,
+  .application,
+  .progect{
+    background-color: white;
+    text-align: center;
+    width: 27%;
+    border: solid 1px black;
+    padding: 20px 20px 30px 20px;
+    margin: 30px 0 0 0;
+    font-size: 18px;
+    /* filter: invert(0%);
+    transition: .5s; */
+  }
+  /* .lending:hover,
+  .shop:hover,
+  .commerce:hover{
+    filter: invert(100%);
+  } */
+  .site_list h3,
+  .app_list h3,
+  .progects_list h3{
+    font-size: 35px;
+    color: #2F4F4F;
+  }
+  .site_list p,
+  .app_list p,
+  .progects_list p{
+    border-top: solid 1px gray;
+    padding: 25px 0 25px 0;
+  }
+  .site_list .price,
+  .app_list .price,
+  .progects_list .price{
+    font-size: 25px;
+    border: none;
+  }
+  .lending p:nth-child(5),
+  .shop p:nth-child(5),
+  .commerce p:nth-child(5),
+  .application p:nth-child(5),
+  .progect p:nth-child(5){
+    border-bottom: solid 1px gray;
+  }
+  .app_img,
+  .progect_img{
+    margin: 30px 0 0 0;
+    width: 60%;
+    background: url('../img/mobile1.png') center;
+    background-size: cover;
+  }
+  .progect_img{
+    background: url('../img/web.png') center;
+    background-size: cover;
+  }
+
+
+
+  .technologу_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .html,
+  .css,
+  .js,
+  .kotlin,
+  .php,
+  .swift,
+  .less,
+  .sass,
+  .laravel,
+  .mysql,
+  .ui,
+  .vue_js{
+    display: flex;
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  .technologу_list h3{
+    text-align: left;
+    font-size: 30px;
+    width: 100%;
+  }
+  .html_logo,
+  .css_logo,
+  .js_logo,
+  .kotlin_logo,
+  .php_logo,
+  .swift_logo,
+  .less_logo,
+  .sass_logo,
+  .laravel_logo,
+  .mysql_logo,
+  .ui_logo,
+  .vue_js_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .html_text,
+  .css_text,
+  .js_text,
+  .kotlin_text,
+  .php_text,
+  .swift_text,
+  .less_text,
+  .sass_text,
+  .laravel_text,
+  .mysql_text,
+  .ui_text,
+  .vue_js_text{
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: left;
+  }
+
+
+
+
+  .discuss{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .discuss p{
+    font-size: 20px;
+  }
+  .discuss_input{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .discuss_progect{
+    width: 100%;
+    text-align: center;
+    margin: 0 0 20px 0;
+  }
+  .input_progect{
+    width: 50%;
+    justify-content: center;
+    width: 50%;
+  }
+  .input_coments{
+    width: 50%;
+  }
+  .input_progect input{
+    width: 80%;
+  }
+  .input_coments input{
+    width: 80%;
+    height: 125px;
+  }
+  .red{
+    color: red;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .button{
+    margin-top: 30px;
+    font-size: 20px;
+    padding: 15px 20px 20px 20px;
+  }
+  .discuss_img{
+    width: 50%;
+    background: url('../img/progect1.jpg');
+    background-size: cover;
+    animation: image 20s infinite linear;
+  }
+  @keyframes image {
+    0%{
+      background: url('../img/progect1.jpg');
+      background-size: cover;
+    }
+    20%{
+      background: url('../img/progect1.jpg');
+      background-size: cover;
+    }
+    25%{
+      background: url('../img/web_footer.jpg');
+      background-size: cover;
+    }
+    45%{
+      background: url('../img/web_footer.jpg');
+      background-size: cover;
+    }
+    50%{
+      background: url('../img/progect.jpeg');
+      background-size: cover;
+    }
+    70%{
+      background: url('../img/progect.jpeg');
+      background-size: cover;
+    }
+    75%{
+      background: url('../img/21.jpg');
+      background-size: cover;
+    }
+    95%{
+      background: url('../img/21.jpg');
+      background-size: cover;
+    }
+    100%{
+      background: url('../img/progect1.jpg');
+      background-size: cover;
+    }
+  }
+}

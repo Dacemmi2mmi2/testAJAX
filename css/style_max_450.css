@@ -1,0 +1,267 @@
+@media only screen and (max-width: 450px){
+  @font-face {
+    font-family: Gramatika Light;
+    src: url(../fonts/15088.ttf);
+  }
+  @font-face {
+    font-family: Gill Sans Nova Cn Heavy;
+    src: url(../fonts/16071.ttf);
+  }
+  *{
+    margin: 0;
+    font-family: 'Gill Sans Nova Cn Heavy';
+  }
+  body{
+    background-image: linear-gradient(to top, rgba(27,27,27,0.8), rgba(27,27,27,0.8)), url('../img/body.png');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  header{
+    width: 100%;
+    text-align: center;
+  }
+  .navigation{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(to top, rgba(27,27,27,0), rgba(27,27,27,0), rgba(27,27,27,0), rgba(27,27,27,1), rgba(27,27,27,1));
+  }
+  nav{
+    width: 100%;
+  }
+  ul{
+    text-align: right;
+  }
+  .navigation_logo img{
+    width: 200px;
+  }
+  .navigation_logo{
+    margin-left: 20px;
+    display: flex;
+    width: 30%;
+  }
+
+
+  /*---------------------------------------------------------*/
+  .navigation_group_mobile{
+    display: block;
+    width: 48%;
+  }
+  .hide{
+    display: none;
+  }
+  .menu{
+    width: 100%;
+  }
+  .logo_menu{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .logo_menu img{
+    margin: 0 20px 0 0;
+    filter: invert(100%);
+  }
+  ul{
+    padding: 0;
+  }
+  li{
+    color: white;
+    list-style-type: none;
+    margin: 5px 20px 5px 5px;
+    font-size: 25px;
+  }
+  .elements_menu{
+    display: block;
+    position: relative;
+    top: -300px;
+    right: -200px;
+    background-color: rgba(27,27,27,1);
+    box-shadow: -15px 5px 15px 5px rgba(27,27,27,1);
+    transition: .75s;
+  }
+  #menu_logo:checked~.elements_menu{
+    display: block;
+    top: 0px;
+    right: 0px;
+  }
+/*-------------------------------------------------------*/
+
+
+
+
+
+
+  .navigation_group{
+    display: none;
+  }
+  .logo span{
+    font-size: 40px;
+    color: red;
+    font-family: 'Gramatika Light';
+  }
+  .logo p{
+    font-size: 30px;
+    color: white;
+    line-height: 500px;
+    font-family: 'Gramatika Light';
+  }
+  .header{
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(to top, rgba(28,28,28,1), rgba(28,28,28,0)), url('../img/city.png') center;
+    background-size: cover;
+  }
+
+
+
+
+  .about{
+    color: white;
+    padding: 20px;
+    text-align: justify;
+    background: linear-gradient(to top, rgba(27,27,27,0), rgba(27,27,27,1));
+  }
+  .about h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  .about p{
+    font-size: 20px;
+  }
+
+
+
+
+  .advantages{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-between;
+  }
+  .advantages h2{
+    width: 100%;
+    font-size: 50px;
+    margin-bottom: 20px;
+    line-height: 50px;
+  }
+  .advantages h3{
+    font-size: 25px;
+    color: #2F4F4F;
+  }
+  .advantages p{
+    font-weight: bold;
+  }
+  .responsive,
+  .answer,
+  .design,
+  .quality,
+  .help,
+  .settings{
+    width: 45%;
+  }
+
+
+
+
+  .about_work{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    background: linear-gradient(to top, rgba(27,27,27,0), rgba(27,27,27,1));
+    margin-bottom: 50px;
+  }
+  .about_work>div{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 40%;
+    padding: 10px 0 10px 0;
+  }
+  .about_work span{
+    width: 100%;
+    font-size: 20px;
+  }
+  .about_work .number{
+    font-size: 50px;
+    width: 100%;
+  }
+  .hour_work,
+  .time{
+    margin-left: 20px;
+  }
+  .number_works,
+  .users{
+    margin-right: 20px;
+  }
+
+
+
+
+  .customers{
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .customers h2{
+    width: 100%;
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 30px;
+  }
+  .customers div{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+
+
+  footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to top, rgba(28,28,28,1), rgba(28,28,28,0.5), rgba(28,28,28,1)), url('../img/contacts.jpg') center;
+    background-size: cover;
+  }
+  .nav{
+    width: 100%;
+  }
+  footer ul{
+    width: 100%;
+    text-align: center;
+  }
+  .inline .number{
+    display: none;
+  }
+  .phone_number{
+    display: block;
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 30px;
+  }
+  .inline li{
+    display: inline;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  li>a{
+    text-decoration: none;
+    color: white;
+  }
+}

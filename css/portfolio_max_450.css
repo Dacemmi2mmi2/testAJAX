@@ -1,0 +1,54 @@
+@media only screen and (max-width: 450px) {
+  @font-face {
+    font-family: Gramatika Light;
+    src: url(../fonts/15088.ttf);
+  }
+  @font-face {
+    font-family: Gill Sans Nova Cn Heavy;
+    src: url(../fonts/16071.ttf);
+  }
+
+  *{
+    user-select: none;
+    margin: 0;
+    font-family: 'Gill Sans Nova Cn Heavy';
+  }
+
+
+
+
+
+  .container_portfolio{
+    background-color: white;
+    padding: 30px 20px 30px 20px;
+  }
+  .epicentr,
+  .invitro,
+  .comfy,
+  .synevo,
+  .fix_up,
+  .smarts{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  .epicentr{
+    margin-bottom: 0px;
+    margin-top: 30px;
+  }
+  .visualization{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .text{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: justify;
+    padding: 20px 0 20px 0;
+    width: 100%;
+  }
+}

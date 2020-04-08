@@ -1,0 +1,62 @@
+@media only screen and (min-width: 1921px) {
+  @font-face {
+    font-family: Gramatika Light;
+    src: url(../fonts/15088.ttf);
+  }
+  @font-face {
+    font-family: Gill Sans Nova Cn Heavy;
+    src: url(../fonts/16071.ttf);
+  }
+  *{
+    user-select: none;
+    margin: 0;
+    font-family: 'Gill Sans Nova Cn Heavy';
+  }
+  body{
+    background-color: black;
+  }
+  .container{
+    width: 1920px;
+    margin: 0 auto;
+  }
+
+  .epicentr_reviews div.img,
+  .invitro_reviews div.img,
+  .comfy_reviews div.img,
+  .synevo_reviews div.img,
+  .fixup_reviews div.img,
+  .smarts_reviews div.img{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .epicentr_reviews div.text,
+  .invitro_reviews div.text,
+  .comfy_reviews div.text,
+  .synevo_reviews div.text,
+  .fixup_reviews div.text,
+  .smarts_reviews div.text{
+    line-height: 1.3;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 40px;
+    width: 60%;
+    margin: 40px 50px 40px 40px;
+    border-top: solid 1px brown;
+    border-right: solid 1px brown;
+    text-align: justify;
+  }
+  .epicentr_reviews,
+  .invitro_reviews,
+  .comfy_reviews,
+  .synevo_reviews,
+  .fixup_reviews,
+  .smarts_reviews{
+    width: 100%;
+    padding: 40px 0 40px 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+  }
+}
