@@ -41,9 +41,10 @@ const pages = function htmlPages(params){
 const buttonTop = function backToTopPage(){
     let posY = Math.floor(pageYOffset);
     let toTop = setInterval(() => {
-        posY < 30 ? posY -- : posY -= 35;
+        posY < 40 ? posY -- : posY -= 35;
         window.scrollTo(pageXOffset, posY);
         posY === 0 ? clearInterval(toTop) : '';
+        console.log(posY);
     }, 10);
 }
 
