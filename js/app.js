@@ -3,6 +3,9 @@ const htmlElements = {
     backToTop : document.querySelector('.goUp'),
     mobileMenu : document.querySelector('.mobileIcon'),
     blockLinks : document.querySelector('.linksOtherPages'),
+    returnCallModalWindow : document.querySelector('.modalReturnCall'),
+    returnCall : document.querySelector('.returnCall'),
+    closeReturnCallWindow : document.querySelector('.closeModalReturnCall button'),
     generContacts : document.querySelector('.pageContacts'),
     generServices : document.querySelector('.pageServices'),
     generPortfolio : document.querySelector('.pagePortfolio'),
@@ -20,6 +23,10 @@ const someVariables = {
     link : 'js/pages.json',
     check : 0,
     positionTop : '',
+    posModalOpenTop : -100,
+    posModalOpenLeft : -50,
+    posModalCloseTop : 0,
+    posModalCloseLeft : 0,
 }
 
 
@@ -44,7 +51,6 @@ const buttonTop = function backToTopPage(){
         posY < 40 ? posY -- : posY -= 35;
         window.scrollTo(pageXOffset, posY);
         posY === 0 ? clearInterval(toTop) : '';
-        console.log(posY);
     }, 10);
 }
 
@@ -62,6 +68,33 @@ const mobile = function positionMobileMenu(){
 }
 
 
+const modal = function modalWindovReturnCall(value){
+    if(value === 'openWindow'){
+        let positionOpenModal = setInterval(() => {
+            someVariables.posModalOpenTop === 0 ? someVariables.posModalOpenLeft += 2 : someVariables.posModalOpenTop += 2;
+            htmlElements.returnCallModalWindow.style.top = someVariables.posModalOpenTop + '%';
+            htmlElements.returnCallModalWindow.style.left = someVariables.posModalOpenLeft + '%';
+            if(someVariables.posModalOpenTop === 0 && someVariables.posModalOpenLeft === 0){
+                clearInterval(positionOpenModal);
+                someVariables.posModalCloseTop = 0;
+                someVariables.posModalCloseLeft = 0;
+            }
+        }, 7.5);
+    }else{
+        let positionCloseModal = setInterval(() => {
+            someVariables.posModalCloseLeft === 50 ? someVariables.posModalCloseTop -= 2 : someVariables.posModalCloseLeft += 2;
+            htmlElements.returnCallModalWindow.style.top = someVariables.posModalCloseTop + '%';
+            htmlElements.returnCallModalWindow.style.left = someVariables.posModalCloseLeft + '%';
+            if(someVariables.posModalCloseLeft === 50 && someVariables.posModalCloseTop === -100){
+                clearInterval(positionCloseModal);
+                someVariables.posModalOpenLeft = -50;
+                someVariables.posModalOpenTop = -100;
+            }
+        }, 7.5);
+    }
+}
+
+
 htmlElements.generContacts.addEventListener('click', () => {pages('contacts')});
 htmlElements.generPortfolio.addEventListener('click', () => {pages('portfolio')});
 htmlElements.generReviews.addEventListener('click', () => {pages('reviews')});
@@ -76,3 +109,5 @@ htmlElements.generMainPageFromFooter.addEventListener('click', () => {pages('mai
 
 htmlElements.backToTop.addEventListener('click', buttonTop);
 htmlElements.mobileMenu.addEventListener('click', mobile);
+htmlElements.returnCall.addEventListener('click', () => {modal('openWindow')});
+htmlElements.closeReturnCallWindow.addEventListener('click', () => {modal('closeWindow')});
