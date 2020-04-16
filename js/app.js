@@ -16,11 +16,15 @@ const htmlElements = {
     generPortfolioFromFooter : document.querySelector('.generPortfolioFromFooter'),
     generReviewsFromFooter : document.querySelector('.generReviewsFromFooter'),
     generMainPageFromFooter : document.querySelector('.generMainPageFromFooter'),
+    formReturnPhoneCall : document.forms['returnPhoneCall'],
+    nameFormReturnPhoneCall : document.querySelector('[name=returnPhoneCall] input:nth-child(1)'),
+    phoneNumberFormReturnPhoneCall : document.querySelector('[name=returnPhoneCall] input:nth-child(2)'),
 };
 
 
 const someVariables = {
-    link : 'js/pages.json',
+    linkPages : 'js/pages.json',
+    urlformReturnPhoneCall : 'data.php',
     check : 0,
     positionTop : '',
     posModalOpenTop : -100,
@@ -36,7 +40,7 @@ const scrol = window.addEventListener('scroll', () => {
 
 
 const pages = function htmlPages(params){
-    fetch(someVariables.link).then((text) => {return text.json()}).then((data) => {
+    fetch(someVariables.linkPages).then((text) => {return text.json()}).then((data) => {
         while (htmlElements.mainContent.firstChild) {
             htmlElements.mainContent.firstChild.remove();
         }
@@ -111,3 +115,21 @@ htmlElements.backToTop.addEventListener('click', buttonTop);
 htmlElements.mobileMenu.addEventListener('click', mobile);
 htmlElements.returnCall.addEventListener('click', () => {modal('openWindow')});
 htmlElements.closeReturnCallWindow.addEventListener('click', () => {modal('closeWindow')});
+
+htmlElements.formReturnPhoneCall.addEventListener('submit', (ev) => {
+    ev.preventDefault();
+
+    let postBody = new FormData(),
+        name = htmlElements.nameFormReturnPhoneCall.value,
+        number = htmlElements.phoneNumberFormReturnPhoneCall.value;
+
+    postBody.append('name', name);
+    postBody.append('number', number);
+
+    fetch('php/get.php', {
+        method: "POST",
+        body: postBody,
+    })
+    .then((respons) => {respons.text()})
+    .then((text) => {console.log(text)})
+});
