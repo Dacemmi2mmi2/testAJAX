@@ -252,4 +252,74 @@
     color: black;
     background-color: #fff;
   }
+
+
+
+
+  .modalReturnCall{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -100%;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(27, 27, 27,.9);
+  }
+  .blockModalReturnCall{
+    width: 400px;
+    height: 560px;
+    background-color: white;
+  }
+  .closeModalReturnCall{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .closeModalReturnCall button{
+    cursor: pointer;
+    font-size: 25px;
+    height: 40px;
+    width: 40px;
+  }
+  .formReturnCall{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .formReturnCall div:not(.imgReturnCall){
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    width: 100%;
+    margin: 10px 0 10px 0;
+  }
+  .imgReturnCall{
+    display: block;
+    width: 100%;
+    height: 250px;
+    background: no-repeat center url('../img/phone_call.png');
+    background-size: contain;
+  }
+  .formReturnCall form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .formReturnCall form>input{
+    font-size: 18px;
+    width: 100%;
+    height: 30px;
+    margin: 10px 0 10px 0;
+  }
+  .formReturnCall form>input:nth-child(3){
+    background-color: green;
+    color: white;
+    letter-spacing: 2px;
+    width: 60%;
+    height: 50px;
+    outline: none;
+    cursor: pointer;
+  }
 }
