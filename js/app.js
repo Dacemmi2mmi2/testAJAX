@@ -24,7 +24,6 @@ const htmlElements = {
 
 const someVariables = {
     linkPages : 'js/pages.json',
-    urlformReturnPhoneCall : 'data.php',
     check : 0,
     positionTop : '',
     posModalOpenTop : -100,
@@ -118,7 +117,6 @@ htmlElements.closeReturnCallWindow.addEventListener('click', () => {modal('close
 
 htmlElements.formReturnPhoneCall.addEventListener('submit', (ev) => {
     ev.preventDefault();
-
     let postBody = new FormData(),
         name = htmlElements.nameFormReturnPhoneCall.value,
         number = htmlElements.phoneNumberFormReturnPhoneCall.value;

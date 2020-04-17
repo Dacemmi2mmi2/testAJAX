@@ -7,8 +7,8 @@ foreach ($keys as $item){
     $arrDataReturnCall[$item] = $_POST[$item];
 }
 
-$str = json_encode($arrDataReturnCall);
+$str = json_encode($arrDataReturnCall, JSON_UNESCAPED_UNICODE);
 
-file_put_contents('data.txt', $str . PHP_EOL, FILE_APPEND);
+file_put_contents('phoneCalls.txt', $str . PHP_EOL, FILE_APPEND);
 
 ?>
