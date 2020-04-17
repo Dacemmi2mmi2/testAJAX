@@ -130,4 +130,6 @@ htmlElements.formReturnPhoneCall.addEventListener('submit', (ev) => {
     })
     .then((respons) => {respons.text()})
     .then((text) => {console.log(text)})
+
+    htmlElements.formReturnPhoneCall.reset();
 });
